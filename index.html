@@ -6,34 +6,38 @@
 </head>
 <body>
 
+    <!-- Step 2. Заголовки и About Me -->
     <h1>Sariyev Maxot</h1>
     <h2>Группа: SE-2406</h2>
     <h3>About Me</h3>
-
-    <p>
-        Меня зовут Максот . Я из города Уральск и мне 18 лет . AITU самый лучший университет.
+    <p id="about">
+        Меня зовут Максот. Я из города Уральск и мне 18 лет. AITU самый лучший университет.
     </p>
 
-    <h3>Мои хобби</h3>
+    <!-- Step 3. Списки -->
+    <h3 id="hobbies">Мои хобби</h3>
     <ol>
         <li>Программирование</li>
         <li>Спорт</li>
         <li>Чтение книг</li>
     </ol>
 
-    <h3>Мои любимые сайты</h3>
+    <h3 id="sites">Мои любимые сайты</h3>
     <ul>
         <li><a href="https://www.google.com" target="_blank">Google</a></li>
         <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
         <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
     </ul>
+
+    <!-- Step 4. Фото -->
     <h3>Фото</h3>
-    <img src="./image/123.png" alt="Моё фото" width="200">
+    <img src="image/123.png" alt="Моё фото" width="200">
 
-
+    <!-- Step 5. Кнопка -->
     <p><button>Кнопка</button></p>
 
-    <h3>Моё расписание</h3>
+    <!-- Step 6. Таблица с расписанием -->
+    <h3 id="schedule">Моё расписание</h3>
     <table border="1" cellpadding="5">
         <tr>
             <th>Subject</th>
@@ -56,24 +60,65 @@
             <td>14:00</td>
         </tr>
     </table>
-    <h3>Моё настроение сегодня</h3>
-    <p>
-        Сегодня я чувствую себя отлично 😎🚀🎉
-    </p>
 
-    <h3>Форма обратной связи</h3>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name"><br><br>
+    <!-- Step 7. Layout с таблицей -->
+    <h3>Step 7. Layout with Table</h3>
+    <table border="1" cellpadding="10" width="100%">
+        <tr>
+            <!-- Левая колонка (меню) -->
+            <td width="25%" valign="top">
+                <h3>Меню</h3>
+                <ul>
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#hobbies">Хобби</a></li>
+                    <li><a href="#sites">Любимые сайты</a></li>
+                    <li><a href="#schedule">Расписание</a></li>
+                    <li><a href="#mood">Настроение</a></li>
+                    <li><a href="#contact">Форма</a></li>
+                </ul>
+            </td>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email"><br><br>
+            <!-- Правая колонка (контент) -->
+            <td width="75%" valign="top">
+                <h3 id="about">Обо мне</h3>
+                <p>Меня зовут Максот. Я из города Уральск и мне 18 лет. AITU самый лучший университет.</p>
 
-        <label for="color">Favorite Color:</label>
-        <input type="color" id="color" name="color"><br><br>
+                <h3 id="hobbies">Хобби</h3>
+                <ol>
+                    <li>Программирование</li>
+                    <li>Спорт</li>
+                    <li>Чтение книг</li>
+                </ol>
 
-        <button type="submit">Submit</button>
-    </form>
+                <h3 id="sites">Любимые сайты</h3>
+                <ul>
+                    <li><a href="https://www.google.com" target="_blank">Google</a></li>
+                    <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+                    <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+                </ul>
+
+                <h3 id="schedule">Расписание</h3>
+                <p>Смотри таблицу выше 👆</p>
+
+                <h3 id="mood">Моё настроение сегодня</h3>
+                <p>Сегодня я чувствую себя отлично 😎🚀🎉</p>
+
+                <h3 id="contact">Форма обратной связи</h3>
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name"><br><br>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email"><br><br>
+
+                    <label for="color">Favorite Color:</label>
+                    <input type="color" id="color" name="color"><br><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </td>
+        </tr>
+    </table>
 
 </body>
 </html>
